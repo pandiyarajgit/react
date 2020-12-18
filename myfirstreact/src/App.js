@@ -5,21 +5,19 @@ import CarouselComponent from "./components/carousel.component";
 import Dropdown from 'react-dropdown';
 import './style.css';
 
+
+const options = [
+  'one', 'two', 'three'
+];
+const defaultOption = options[0];
+<Dropdown options={options}  value={defaultOption} placeholder="Select an option" />;
+
+
 function App() {
   return (
     <div className="App">
 	
-		<Dropdown>
-  <Dropdown.Toggle variant="success" id="dropdown-basic">
-    Dropdown Button
-  </Dropdown.Toggle>
-
-  <Dropdown.Menu>
-    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-  </Dropdown.Menu>
-   </Dropdown>
+	<Dropdown className='myClassName' />;
    
    
       <CarouselComponent />
